@@ -3,7 +3,7 @@ iris_data=[]
 iris_classe=[]
 
 #convertir la csv data
-with open ("/content/iris.csv") as csv_file:
+with open ("iris.csv") as csv_file:
 	csv_reader = csv.reader(csv_file, delimiter=",")
 	for row in csv_reader:
 		iris_data.append([float(row[0]),float(row[1]),float(row[2]),float(row[3])])
